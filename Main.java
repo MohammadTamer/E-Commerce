@@ -20,6 +20,8 @@ public class Main {
         checkout(cust, cart);
     }
 
+
+
     public static void checkout(Customer customer, Cart cart) {
         if (cart.getItems().isEmpty())
             throw new EmptyCartException();
@@ -37,6 +39,8 @@ public class Main {
             if (p instanceof Shippable)
                 shippedProducts.add(i);
         }
+
+
         double totalWeight = 0;
         if (!shippedProducts.isEmpty()) {
             System.out.println("** Shipment notice **");
@@ -48,11 +52,10 @@ public class Main {
             }
             System.out.printf("Total package weight " + totalWeight + "kg%n%n");
         }
+
+
         shippingPrice = totalWeight * 5;
         double totalAmount = totalPrice + shippingPrice;
-        if (totalAmount > customer.getBalance()) {
-            throw new RuntimeException("Insufficient balance");
-        }
         customer.withdrawBalance(totalAmount);
         System.out.println("** Checkout receipt **");
         for (Item item : items) {

@@ -1,3 +1,6 @@
+import exceptions.InsufficientBalanceException;
+import exceptions.OutOfStockException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +12,7 @@ public class Cart {
             Item i = new Item(p, quantity);
             items.add(i);
         } else
-            throw new RuntimeException("Product out of stock: " + p.getName());
+            throw new OutOfStockException(p.getName());
     }
 
     public List<Item> getItems() {
