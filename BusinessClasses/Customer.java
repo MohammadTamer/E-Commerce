@@ -1,3 +1,5 @@
+package BusinessClasses;
+
 import exceptions.InsufficientBalanceException;
 
 public class Customer {

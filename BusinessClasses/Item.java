@@ -1,3 +1,5 @@
+package BusinessClasses;
+
 public class Item {
     public Product product;
     public int quantity;

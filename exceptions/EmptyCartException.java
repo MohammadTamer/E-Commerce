@@ -1,5 +1,5 @@
 package exceptions;
 
 public class EmptyCartException extends RuntimeException {
-    public EmptyCartException() { super("Cart is empty"); }
+    public EmptyCartException() { super("BusinessClasses.Cart is empty"); }
 }

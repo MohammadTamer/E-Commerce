@@ -1,6 +1,6 @@
-import exceptions.OutOfStockException;
+package BusinessClasses;
 
-import java.time.LocalDate;
+import exceptions.OutOfStockException;
 
 public class Product {
     protected String name;
@@ -26,11 +26,18 @@ public class Product {
     }
 
     public void decrementQuantity(int amount) {
-        if (amount > quantity) throw new OutOfStockException(name);
-        quantity -= amount;
+        if (amount > quantity)
+            throw new OutOfStockException(name);
+        else
+            quantity -= amount;
     }
+
     public boolean isExpired() {
         return false;
+    }
+
+    public String toDataLine() {
+        return "product," + name + "," + price + "," + quantity;
     }
 }
 
