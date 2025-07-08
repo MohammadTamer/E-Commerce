@@ -1,15 +1,11 @@
 import BusinessClasses.*;
 import FilesManagement.ProductData;
-import exceptions.EmptyCartException;
-import exceptions.ExpiredProductException;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Product> products = ProductData.readProducts("test_products.txt");
+        ArrayList<Product> products = ProductData.readProducts("FilesManagement/test_products.txt");
 
         Customer cust = new Customer("Ali", 2000);
         Cart cart = new Cart();
@@ -19,7 +15,7 @@ public class Main {
         String result = cart.checkout(cust);
         System.out.println(result);
 
-        ProductData.writeProducts("test_products.txt",products);
+        ProductData.writeProducts("FilesManagement/test_products.txt",products);
     }
 
 

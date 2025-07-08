@@ -1,0 +1,14 @@
+expirationProduct,Ice Cream,10.22,13,54
+expirationProduct,Tofu,13.74,51,20
+expirationProduct,Spinach,1.69,33,66
+expirationProduct,Sausage,7.44,11,22
+expirationProduct,Eggs,7.74,34,54
+shippableProduct,Washing Machine,789.34,3,61.3
+shippableProduct,Air Conditioner,1640.75,6,27.0
+shippableProduct,Heater,1329.97,1,32.2
+shippableProduct,Smart Watch,692.35,7,3.4,30
+product,Eraser,9.71,110
+product,Lamp,7.63,10
+product,Marker,6.82,76
+product,Gift Card,12.29,7
+product,Folder,4.21,154
