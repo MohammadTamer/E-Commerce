@@ -50,6 +50,3 @@ E-Commerce/
 
 ---
 
-Feel free to customize this `README.md` with your name or GitHub info if you plan to publish it!
-
-Want me to generate the actual file content for download?
